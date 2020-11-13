@@ -25,7 +25,9 @@ export default class App extends React.Component {
         <ScrollView style={{flexDirection:"row",padding:20, paddingLeft: 12, paddingTop:30}} horizontal={true} showsHorizontalScrollIndicator={false}>
 
           {logos.map((logo, index) => (
-        <Logo key={index} image={logo.image}
+        <Logo 
+        key={index} 
+        image={logo.image}
         text={logo.text}
         />
           ))}

@@ -6,6 +6,7 @@ import Card from './components/Card';
 import {Icon} from "@expo/vector-icons";
 import {NotificationIcon} from "./components/Icons";
 import Logo from './components/Logo';
+///import Course from './components/Course'
 
 export default class App extends React.Component {
   render() {
@@ -48,7 +49,21 @@ export default class App extends React.Component {
         />
         ))}
  </ScrollView>
-        </ScrollView>
+ <Subtitle> Popular Courses</Subtitle>
+ {courses.map((course, index) => 
+ <Course 
+ key={index}
+ image={course.image}
+ title={course.title}
+ subtitle={course.subtitle}
+ logo={course.logo}
+ author={course.author}
+ avatar={course.avatar}
+ caption={course.caption}
+  />
+
+)}
+         </ScrollView>
         </SafeAreaView>
       </Container>
     );
@@ -160,3 +175,15 @@ const cards = [
   logo: require("./assets/logo-react.png")
 }
 ];
+
+const courses = [
+  {
+    title:"prototype in InVision Studio",
+    subtitle:"10 sections",
+    image:require("./assets/background13.jpg"),
+    logo:require("./assets/logo-studio.png"),
+    author:"Meng To",
+    avatar: require("./assets/avatar.jpg"), 
+    caption: "Design and interactive prototype"
+  }
+]

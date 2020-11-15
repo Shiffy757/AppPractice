@@ -6,7 +6,7 @@ const Course = props => (
         <Cover>
             <Image source ={props.image} />
             <Logo source ={props.logo}/>
-            <Subtite>{props.subtitle}</Subtite>
+            <Subtitle>{props.subtitle}</Subtitle>
             <Title>{props.title}</Title>
         </Cover>
         <Content>
@@ -33,14 +33,14 @@ width:100%;
 height:100%;
 `
 
-const Logo=styled.Logo`
+const Logo=styled.Image`
 width:48px;
 height:48px;
 `
 
-const  Title=styled.Title``
+const  Title=styled.Text``
 
-const Subtitle= styled.Subtitle``
+const Subtitle= styled.Text``
 
 const Content = styled.View``
 
@@ -49,7 +49,7 @@ width:32px;
 height:32px;
 `
 
-const Caption = styled.text``
+const Caption = styled.Text``
 
 const Name = styled.Text``
 

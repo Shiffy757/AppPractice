@@ -6,7 +6,7 @@ import Card from './components/Card';
 import {Icon} from "@expo/vector-icons";
 import {NotificationIcon} from "./components/Icons";
 import Logo from './components/Logo';
-///import Course from './components/Course'
+import Course from './components/Course'
 
 export default class App extends React.Component {
   render() {
